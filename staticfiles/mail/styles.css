@@ -1,0 +1,27 @@
+textarea {
+    min-height: 400px;
+}
+div.mail_read{
+    position:relative;
+    background-color:#ccbebe;
+    padding:10px 10px 0px 10px;
+
+}
+
+div.mail_unread{
+    position:relative;
+    background-color:white;
+    padding:10px 10px 0px 10px;
+}
+span.link{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.email_detail_span{
+    font-size:25px;
+    font-weight: bold;
+}
