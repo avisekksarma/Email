@@ -25,7 +25,7 @@ SECRET_KEY = '05$4$3aew(8ywondz$g!k4m779pbvn9)euj0zp7-ae*x@4pxr+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['letsmail.herokuapp.com','127.0.0.1','0.0.0.0']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'project3.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd7qnc05aa0cju1',
+        'USER': 'lkaetudmshzwkc',
+        'PASSWORD': 'bbe8048bf81ec84907d97ccde9caaaedb72246903463364ee03147e7963ae412',
+        'HOST': 'ec2-54-228-209-117.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
